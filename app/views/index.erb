@@ -1,0 +1,8 @@
+<html>
+<h1> HELLO WORLD !</h1>
+<%@recipes.each do |recipe|%>
+    <a href="/recipes/<%=recipe.id%>">
+    <%=recipe.name%>
+<%end%>
+
+</html>
