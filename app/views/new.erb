@@ -2,20 +2,9 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Homepage</title>
+    <title>New Recipe</title>
   </head>
   <body>
-    <h1>All Recipes</h1>
-    <% @recipes.each do |element| %>
-      <div name="recipes">
-        <h2><%= element.name %></h2><br>
-        <p>Ingredients you'll need: <%= element.ingredients %></p><br>
-        <p>Time Duration: <%= element.cook_time %></p><br>
-        <a href="/recipes/<%= element.id %>">Link to Recipe</a>
-      </div>
-    <% end %>
-
-    <!--<h1>Creating New Recipe</h1>
     <form method="POST" action="/recipes">
       <label for="name">Recipe Name: </label>
       <input type="text" name="name" placeholder="name"><br>
@@ -24,6 +13,6 @@
       <label for="cook_time">Cook Time: </label>
       <input type="text" name="cook_time" placeholder="cook_time"><br>
       <input type="submit" value="Submit">
-    </form>-->
+    </form>
   </body>
 </html>
